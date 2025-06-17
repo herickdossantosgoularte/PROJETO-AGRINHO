@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(#e0ffe0, #f0f0ff);
+  background: linear-gradient(#03910f, #fefeff);
   color: #333;
 }
 
@@ -18,8 +18,8 @@ a {
 header {
   text-align: center;
   padding: 40px;
-  background: #3a6b35;
-  color: white;
+  background: #099420;
+  color: rgb(255, 255, 255);
   border-bottom: 10px solid #d9a441;
 }
 
@@ -45,11 +45,11 @@ header p {
   justify-content: center;
   padding: 40px 20px;
   gap: 30px;
-  background: #f7f7f7;
+  background: #0e962500;
 }
 
 .card {
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   width: 300px;
@@ -63,7 +63,7 @@ header p {
 /* Quando passa o mouse no card inteiro */
 .card:hover {
   background-color: #3a6b35;
-  color: white;
+  color: rgb(247, 247, 247);
 }
 
 .card img {
@@ -86,7 +86,7 @@ header p {
 
 footer {
   background: #3a6b35;
-  color: white;
+  color: rgb(243, 243, 243);
   text-align: center;
   padding: 20px;
   margin-top: 40px;
@@ -94,7 +94,7 @@ footer {
 .rodape-centralizado {
   position: relative;
   background: #3a6b35;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px 40px;
 }
@@ -117,14 +117,14 @@ footer {
   justify-content: flex-end;
   gap: 10px;
   padding: 10px 20px;
-  background: #f0f0f0;
+  background: #fffefe;
 }
 
 .acessibilidade button {
   font-size: 1em;
   padding: 6px 12px;
   background-color: #3a6b35;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -178,4 +178,50 @@ main {
 .descricao h2 {
   margin-left: 30px;
 
+}
+.acessibilidade {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 20px;
+  background: #1abd0b00;
+}
+
+.acessibilidade button {
+  font-size: 1em;
+  padding: 6px 12px;
+  background-color: #3a6b35;
+  color: #fffdfd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 20px; /* espaço entre os cards */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
